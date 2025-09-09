@@ -1,20 +1,13 @@
+import { safeParse } from "$/Hooks/common/hooks/hooks.js";
 import { useCallback, useEffect, useState } from "react";
 
-function safeParseSession<T>(value: string | null, fallback: T): T {
-  if (value === null) return fallback;
-  try {
-    return JSON.parse(value) as T;
-  } catch {
-    return fallback;
-  }
-}
 
 export function useSessionStorage<T>(key: string, initialValue: T) {
   const [state, setState] = useState<T>(() => {
     if (typeof window === "undefined") return initialValue;
     try {
       const raw = window.sessionStorage.getItem(key);
-      return safeParseSession<T>(raw, initialValue);
+      return safeParse<T>(raw, initialValue);
     } catch {
       return initialValue;
     }
@@ -48,7 +41,7 @@ export function useSessionStorage<T>(key: string, initialValue: T) {
   useEffect(() => {
     const onStorage = (e: StorageEvent) => {
       if (e.key !== key) return;
-      setState((prev) => safeParseSession<T>(e.newValue, prev));
+      setState((prev) => safeParse<T>(e.newValue, prev));
     };
     window.addEventListener("storage", onStorage);
     return () => window.removeEventListener("storage", onStorage);

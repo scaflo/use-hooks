@@ -1,5 +1,5 @@
 {
-    "cSpell.words": [
-        "scaflo"
-    ]
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "javascript.preferences.importModuleSpecifier": "non-relative",
+    "typescript.preferences.importModuleSpecifierEnding": "js"
 }
