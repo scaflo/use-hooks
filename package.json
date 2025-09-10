@@ -1,6 +1,6 @@
 {
   "name": "@scaflo/use-hooks",
-  "version": "0.1.0-alpha.4",
+  "version": "0.1.0",
   "type": "module",
   "module": "dist/index.js",
   "description": "",
