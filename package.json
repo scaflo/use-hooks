@@ -1,6 +1,6 @@
 {
   "name": "@scaflo/use-hooks",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-alpha.2",
   "type": "module",
   "module": "dist/index.js",
   "description": "",
@@ -25,15 +25,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Swapnesh-dev/scaflo-ui.git"
+    "url": "git+https://github.com/scaflo/use-hooks.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Swapnesh-dev/scaflo-ui/issues"
+    "url": "https://github.com/scaflo/use-hooks/issues"
   },
-  "homepage": "https://github.com/Swapnesh-dev/scaflo-ui#readme",
+  "homepage": "https://github.com/scaflo/use-hooks#readme",
   "devDependencies": {
     "@types/node": "^24.0.13",
     "@types/react": "^19.1.2",
