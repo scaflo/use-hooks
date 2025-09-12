@@ -1,6 +1,6 @@
 {
   "name": "@scaflo/use-hooks",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "module": "dist/index.js",
   "description": "",
@@ -29,17 +29,17 @@
     "url": "git+https://github.com/scaflo/use-hooks.git"
   },
   "keywords": [
-  "react",
-  "hooks",
-  "react-hooks",
-  "usehooks",
-  "custom-hooks",
-  "frontend",
-  "javascript",
-  "typescript",
-  "web",
-  "scaflo"
-],
+    "react",
+    "hooks",
+    "react-hooks",
+    "usehooks",
+    "custom-hooks",
+    "frontend",
+    "javascript",
+    "typescript",
+    "web",
+    "scaflo"
+  ],
   "author": "scaflo/swapnesh",
   "license": "ISC",
   "bugs": {
