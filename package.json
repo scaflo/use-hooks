@@ -1,6 +1,6 @@
 {
   "name": "@scaflo/use-hooks",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "type": "module",
   "module": "dist/index.js",
   "description": "",
@@ -21,14 +21,26 @@
     "clean": "rm -rf dist",
     "lint": "eslint . --fix",
     "format": "prettier --write .",
+    "generate-docs": "typedoc",
     "new:publish": "pnpm build && npm publish --access public"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/scaflo/use-hooks.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "react",
+    "hooks",
+    "react-hooks",
+    "usehooks",
+    "custom-hooks",
+    "frontend",
+    "javascript",
+    "typescript",
+    "web",
+    "scaflo"
+  ],
+  "author": "scaflo/swapnesh",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/scaflo/use-hooks/issues"
@@ -47,6 +59,7 @@
     "react-dom": "^19.1.0",
     "tsc-watch": "^6.2.1",
     "tsup": "^8.5.0",
+    "typedoc": "^0.28.12",
     "typescript": "^5.8.3"
   },
   "peerDependencies": {
