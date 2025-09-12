@@ -21,6 +21,7 @@
     "clean": "rm -rf dist",
     "lint": "eslint . --fix",
     "format": "prettier --write .",
+    "generate-docs": "typedoc",
     "new:publish": "pnpm build && npm publish --access public"
   },
   "repository": {
@@ -47,6 +48,7 @@
     "react-dom": "^19.1.0",
     "tsc-watch": "^6.2.1",
     "tsup": "^8.5.0",
+    "typedoc": "^0.28.12",
     "typescript": "^5.8.3"
   },
   "peerDependencies": {
