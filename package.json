@@ -28,8 +28,19 @@
     "type": "git",
     "url": "git+https://github.com/scaflo/use-hooks.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+  "react",
+  "hooks",
+  "react-hooks",
+  "usehooks",
+  "custom-hooks",
+  "frontend",
+  "javascript",
+  "typescript",
+  "web",
+  "scaflo"
+],
+  "author": "scaflo/swapnesh",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/scaflo/use-hooks/issues"
