@@ -17,7 +17,7 @@ export function useThrottle<T>(value: T, limit = 200) {
           setThrottled(value);
           lastRan.current = Date.now();
         },
-        limit - (now - lastRan.current)
+        limit - (now - lastRan.current),
       );
     }
     return () => window.clearTimeout(timer.current);

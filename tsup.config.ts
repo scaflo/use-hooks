@@ -2,7 +2,7 @@
 import { defineConfig } from "tsup";
 
 export default defineConfig({
-  entry: ["src/hooks.ts"], // your public API
+  entry: ["src/index.ts"], // your public API
   format: ["esm"], // only ES modules
   dts: true, // emit .d.ts files
   splitting: true, // no code‑splitting for libs

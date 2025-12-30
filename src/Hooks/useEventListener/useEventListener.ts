@@ -6,7 +6,7 @@ export function useEventListener<K extends keyof GlobalEventHandlersEventMap>(
   eventName: K,
   handler: (ev: GlobalEventHandlersEventMap[K]) => void,
   target: PossibleEventTarget = window,
-  options?: boolean | AddEventListenerOptions
+  options?: boolean | AddEventListenerOptions,
 ) {
   const savedHandler = useRef(handler);
   savedHandler.current = handler;
@@ -30,7 +30,7 @@ export function useEventListener<K extends keyof GlobalEventHandlersEventMap>(
       t.removeEventListener(
         eventName as string,
         listener as EventListener,
-        options
+        options,
       );
   }, [eventName, target, options]);
 }
