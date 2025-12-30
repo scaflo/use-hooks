@@ -1,5 +1,4 @@
-import UseTriggerPrint from "$/Hooks/UseTriggerPrint/UseTriggerPrint.js";
-
+export { UseTriggerPrint } from "$/Hooks/UseTriggerPrint/UseTriggerPrint.js";
 export { useAnimationFrame } from "$/Hooks/useAnimationFrame/useAnimationFrame.js";
 export { useBattery, BatteryState } from "$/Hooks/useBattery/useBattery.js";
 export { useBroadcastChannel } from "$/Hooks/useBroadcastChannel/useBroadcastChannel.js";
@@ -19,7 +18,6 @@ export { useScrollPosition } from "$/Hooks/useScrollPosition/useScrollPosition.j
 export { useRetryable } from "$/Hooks/useRetryable/useRetryable.js";
 export { useThrottle } from "$/Hooks/useThrottle/useThrottle.js";
 export { useSessionStorage } from "$/Hooks/useSessionStorage/useSessionStorage.js";
-UseTriggerPrint;
 
 // export {
 //   useAnimationFrame,

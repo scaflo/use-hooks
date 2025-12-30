@@ -28,4 +28,4 @@ async function UseTriggerPrint(html: string) {
   };
 }
 
-export default UseTriggerPrint;
+export  {UseTriggerPrint};
