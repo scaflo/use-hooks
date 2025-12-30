@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef } from "react";
 
 export function useAnimationFrame(
   callback: (timestamp: number) => void,
-  { autoStart = true }: { autoStart?: boolean } = {}
+  { autoStart = true }: { autoStart?: boolean } = {},
 ) {
   const cbRef = useRef(callback);
   cbRef.current = callback;

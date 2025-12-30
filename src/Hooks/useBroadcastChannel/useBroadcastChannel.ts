@@ -8,11 +8,11 @@ type UseBroadcastChannelOptions = {
 
 export function useBroadcastChannel<T = unknown>(
   name: string,
-  options?: UseBroadcastChannelOptions
+  options?: UseBroadcastChannelOptions,
 ) {
   const channelRef = useRef<BroadcastChannel | null>(null);
   const handlerRef = useRef<BroadcastMessageHandler<T> | undefined>(
-    options?.onMessage
+    options?.onMessage,
   );
 
   handlerRef.current = options?.onMessage;

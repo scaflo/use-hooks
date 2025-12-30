@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { safeParse } from "../common/hooks/hooks.js";
 
-
 export function useLocalStorage<T>(key: string, initialValue: T) {
   const [state, setState] = useState<T>(() => {
     if (typeof window === "undefined") return initialValue;
@@ -26,7 +25,7 @@ export function useLocalStorage<T>(key: string, initialValue: T) {
         return next;
       });
     },
-    [key]
+    [key],
   );
 
   const remove = useCallback(() => {

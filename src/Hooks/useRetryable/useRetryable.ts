@@ -10,7 +10,7 @@ type RetryableOptions = {
  */
 export function useRetryable<T>(
   fn: () => Promise<T>,
-  options?: RetryableOptions
+  options?: RetryableOptions,
 ) {
   const { retries = 3, delay = 1000 } = options ?? {};
   const [attempts, setAttempts] = useState(0);

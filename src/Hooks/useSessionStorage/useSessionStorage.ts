@@ -1,7 +1,6 @@
 import { safeParse } from "$/Hooks/common/hooks/hooks.js";
 import { useCallback, useEffect, useState } from "react";
 
-
 export function useSessionStorage<T>(key: string, initialValue: T) {
   const [state, setState] = useState<T>(() => {
     if (typeof window === "undefined") return initialValue;
@@ -26,7 +25,7 @@ export function useSessionStorage<T>(key: string, initialValue: T) {
         return next;
       });
     },
-    [key]
+    [key],
   );
 
   const remove = useCallback(() => {

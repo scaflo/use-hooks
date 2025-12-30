@@ -1,6 +1,6 @@
 # @scaflo/use-hooks
 
-A collection of useful React hooks.  
+A collection of useful React hooks.
 
 ## Installation
 

@@ -1,6 +1,8 @@
-import { GeolocationCoords, useGeolocation } from "$/Hooks/useGeolocation/useGeolocation.js";
+import {
+  GeolocationCoords,
+  useGeolocation,
+} from "$/Hooks/useGeolocation/useGeolocation.js";
 import { useCallback, useEffect, useState } from "react";
-
 
 export function useLocationData<R = unknown>(opts?: {
   reverseGeocode?: (coords: GeolocationCoords) => Promise<R>;

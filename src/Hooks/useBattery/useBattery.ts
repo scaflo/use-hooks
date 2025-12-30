@@ -18,11 +18,11 @@ type BatteryManagerLike = EventTarget & {
   dischargingTime: number;
   addEventListener(
     type: string,
-    listener: EventListenerOrEventListenerObject
+    listener: EventListenerOrEventListenerObject,
   ): void;
   removeEventListener(
     type: string,
-    listener: EventListenerOrEventListenerObject
+    listener: EventListenerOrEventListenerObject,
   ): void;
 };
 
@@ -40,7 +40,7 @@ export function useBattery() {
   const [supported, setSupported] = useState<boolean>(
     () =>
       typeof navigator !== "undefined" &&
-      typeof navigator.getBattery === "function"
+      typeof navigator.getBattery === "function",
   );
   const [battery, setBattery] = useState<BatteryState | null>(null);
 

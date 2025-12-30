@@ -67,7 +67,7 @@ function getCookieRaw(name: string): string | null {
 export function useCookie<T = string>(
   name: string,
   initialValue?: T,
-  options?: CookieOptions
+  options?: CookieOptions,
 ) {
   const read = (): T | null | string => {
     const raw = getCookieRaw(name);
@@ -81,7 +81,7 @@ export function useCookie<T = string>(
   const setCookie = useCallback(
     (
       next: T | string | ((prev: T | string | null) => T | string),
-      opts?: CookieOptions
+      opts?: CookieOptions,
     ) => {
       if (typeof document === "undefined") return;
       const current = (
@@ -96,7 +96,7 @@ export function useCookie<T = string>(
       setValueState(tryParseValue<T>(serialized));
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [name, JSON.stringify(options), value]
+    [name, JSON.stringify(options), value],
   );
 
   const remove = useCallback(() => {

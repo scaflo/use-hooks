@@ -12,10 +12,10 @@ export type GeolocationCoords = {
 
 export function useGeolocation(options?: PositionOptions) {
   const [coords, setCoords] = useState<GeolocationCoords | undefined>(
-    undefined
+    undefined,
   );
   const [error, setError] = useState<GeolocationPositionError | undefined>(
-    undefined
+    undefined,
   );
   const watchId = useRef<number | null>(null);
 
@@ -57,11 +57,11 @@ export function useGeolocation(options?: PositionOptions) {
             setError(err);
             reject(err);
           },
-          opts ?? options
+          opts ?? options,
         );
       });
     },
-    [isSupported, options]
+    [isSupported, options],
   );
 
   const startWatch = useCallback(
@@ -71,10 +71,10 @@ export function useGeolocation(options?: PositionOptions) {
       watchId.current = navigator.geolocation.watchPosition(
         (pos) => updateFromPosition(pos),
         (err) => setError(err),
-        opts ?? options
+        opts ?? options,
       );
     },
-    [isSupported, options]
+    [isSupported, options],
   );
 
   const stopWatch = useCallback(() => {

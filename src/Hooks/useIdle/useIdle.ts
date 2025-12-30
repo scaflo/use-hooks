@@ -63,7 +63,7 @@ export function useIdle({
     };
 
     events.forEach((ev) =>
-      window.addEventListener(ev, wrapped, { passive: true })
+      window.addEventListener(ev, wrapped, { passive: true }),
     );
     document.addEventListener("visibilitychange", wrapped, { passive: true });
 

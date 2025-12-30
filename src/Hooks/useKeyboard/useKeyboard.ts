@@ -5,7 +5,7 @@ import { useEffect } from "react";
 export function useKeyboard(
   key: string | string[],
   handler: (event: KeyboardEvent) => void,
-  enabled = true
+  enabled = true,
 ) {
   useEffect(() => {
     if (!enabled) return;

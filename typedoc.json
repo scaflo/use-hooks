@@ -1,7 +1,5 @@
 {
-  "entryPoints": [
-    "src/hooks.ts"
-  ],
+  "entryPoints": ["src/index.ts"],
   "out": "docs",
   "includeVersion": true,
   "excludePrivate": true,
