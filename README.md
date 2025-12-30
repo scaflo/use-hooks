@@ -32,6 +32,7 @@ pnpm add @scaflo/use-hooks
 - [useRetryable](https://scaflo-use-hooks.netlify.app/)
 - [useThrottle](https://scaflo-use-hooks.netlify.app/)
 - [useSessionStorage](https://scaflo-use-hooks.netlify.app/)
+- [more ...](https://scaflo-use-hooks.netlify.app/)
 
 ## Usage
 
