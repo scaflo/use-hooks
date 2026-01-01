@@ -6,10 +6,11 @@
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "homepage": "https://scaflo-use-hooks.netlify.app/",
   "exports": {
     ".": {
-      "import": "./dist/hooks.js",
-      "types": "./dist/hooks.d.ts"
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     }
   },
   "files": [
@@ -45,7 +46,6 @@
   "bugs": {
     "url": "https://github.com/scaflo/use-hooks/issues"
   },
-  "homepage": "https://github.com/scaflo/use-hooks#readme",
   "devDependencies": {
     "@types/node": "^24.0.13",
     "@types/react": "^19.1.2",
